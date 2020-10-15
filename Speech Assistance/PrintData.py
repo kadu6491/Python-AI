@@ -34,7 +34,7 @@ class FindData:
         a.audio_time(currentTime.hour, currentTime.minute, zone)
 
     def look_up_weather(self, city):
-        url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid=01ac3a69e4143a926e1f2fd2c63b3ffa&units=metric'.format(
+        url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid="API ID HERE"&units=metric'.format(
             city)
 
         res = requests.get(url).json()
